@@ -33,7 +33,7 @@ RUN --mount=type=cache,target=/root/.m2/repository \
 # ============================
 # 3) Runtime Stage
 # ============================
-FROM eclipse-temurin:21-jre-alpine AS runtime
+FROM eclipse-temurin:21.0.13.1_2-jre-alpine AS runtime
 
 # Configurar diretório de trabalho
 WORKDIR /app
